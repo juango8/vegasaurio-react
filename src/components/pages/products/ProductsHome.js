@@ -20,8 +20,15 @@ export const ProductsHome = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
-                
+      
+
+                <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
             </div>
         </div>
     );
