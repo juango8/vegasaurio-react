@@ -1,6 +1,6 @@
 
 import React from 'react';
- 
+
 
 export const ProductsHome = () => {
     return (
@@ -20,15 +20,24 @@ export const ProductsHome = () => {
                     </div>
                 </div>
             </div>
-      
-
-                <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
+            <div className="row">
+                <div className="col-lg-3 col-12">
+                    <div id="sidebar-wrapper">
+                        <ul class="sidebar-nav">
+                            <li><a href="#">FRUTAS Y VERDURAS</a></li>
+                            <li><a href="#">DISPENSA</a></li>
+                            <li><a href="#">CUIDADO PERSONAL</a></li>
+                            <li><a href="#">LIMPIEZA</a></li>
+                            <li><a href="#">PANADERIA</a></li>
+                            <li><a href="#">CORTES Y CARNES VEGETALES</a></li>
+                            <li><a href="#">EMBUTIDOS</a></li>
+                            <li><a href="#">LICORES</a></li>
+                            <li><a href="#">LÁCTEOS Y QUESOS</a></li>
+                            <li><a href="#">FLORES Y DETALLES</a></li>
+                            <li><a href="#">ALIMENTOS PREPARADOS</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -247,7 +247,7 @@ iframe {
     position: relative;
     height:100%;
     overflow-y:hidden;
-    background: #5b4282;
+    background: transparent;
     opacity:0.9;
       transition:all .5s;
       display:flex;
@@ -272,11 +272,12 @@ iframe {
   .sidebar-nav li a {
     display:block;
     text-decoration:none;
-    color:#ddd;
+    color:black;
+    font-weight: 700;
   }
   
   .sidebar-nav li:hover{
-    background:#846bab;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0) 100%);
   }
   
   
