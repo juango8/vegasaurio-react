@@ -58,7 +58,7 @@ export const Navbar = () => {
                         className="nav-item nav-link menu-item"
                         exact
                         to="/carta">
-                        CARTA
+                        RESTOBAR
                     </NavLink>
                     <NavLink
                         activeClassName="active"
@@ -66,13 +66,6 @@ export const Navbar = () => {
                         exact
                         to="/blog">
                         BLOG
-                    </NavLink>
-                    <NavLink
-                        activeClassName="active"
-                        className="nav-item nav-link menu-item"
-                        exact
-                        to="/eventos">
-                        EVENTOS
                     </NavLink>
                 </div>
             </div>

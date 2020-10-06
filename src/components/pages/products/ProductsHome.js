@@ -1,7 +1,28 @@
-import React from "react";
+
+import React from 'react';
+ 
 
 export const ProductsHome = () => {
     return (
-        <h1>test</h1>
+        <div>
+            <div
+                id="carouselExampleSlidesOnly"
+                className="carousel slide animated fadeIn fast"
+                data-ride="carousel"
+            >
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img
+                            src={'./assets/img/quienes-somos.png'}
+                            className="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="container">
+                
+            </div>
+        </div>
     );
 }
