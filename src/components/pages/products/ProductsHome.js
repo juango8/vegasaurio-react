@@ -13,7 +13,7 @@ export const ProductsHome = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src={'./assets/img/quienes-somos.png'}
+                            src={'./assets/img/banner.png'}
                             className="d-block w-100"
                             alt="..."
                         />

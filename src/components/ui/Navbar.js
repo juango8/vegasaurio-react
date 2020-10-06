@@ -72,7 +72,7 @@ export const Navbar = () => {
 
                 <div class="input-group" style={{ margin: "0em 4em" }}>
                     <div class="input-group-prepend">
-                        <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+                        <span class="input-group-text black" style={{ backgroundColor: "black", borderColor:"black" }} id="basic-text1"><i class="fas fa-search text-white"
                             aria-hidden="true"></i></span>
                     </div>
                     <input class="form-control my-0 py-1" type="text" placeholder="Buscar producto..." aria-label="Search" />
