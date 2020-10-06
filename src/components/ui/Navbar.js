@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, NavLink} from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
@@ -7,7 +7,7 @@ export const Navbar = () => {
             <Link
                 to="/">
                 <a className="navbar-brand" href="/">
-                    <img src={'./assets/img/vega.png'} height="130" alt="" loading="lazy"/>
+                    <img src={'./assets/img/vega.png'} height="130" alt="" loading="lazy" />
                 </a>
             </Link>
             {/*<button className="navbar-toggler" type="button" data-toggle="collapse"*/}
@@ -30,14 +30,14 @@ export const Navbar = () => {
                         className="nav-item nav-link menu-item"
                         exact
                         to="/quienes-somos">
-                        QUIENES SOMOS
+                        QUIÉNES SOMOS
                     </NavLink>
                     <NavLink
                         activeClassName="active"
                         className="nav-item nav-link menu-item"
                         exact
                         to="/ubicanos">
-                        UBICANOS
+                        UBÍCANOS
                     </NavLink>
                     <NavLink
                         activeClassName="active"
@@ -67,6 +67,15 @@ export const Navbar = () => {
                         to="/blog">
                         BLOG
                     </NavLink>
+
+                </div>
+
+                <div class="input-group" style={{ margin: "0em 4em" }}>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+                            aria-hidden="true"></i></span>
+                    </div>
+                    <input class="form-control my-0 py-1" type="text" placeholder="Buscar producto..." aria-label="Search" />
                 </div>
             </div>
         </nav>
