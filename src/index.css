@@ -243,6 +243,7 @@ iframe {
 /* side bar*/
 
 #sidebar-wrapper{
+    margin: 4em 0em;
     z-index:1;
     position: relative;
     height:100%;
@@ -252,6 +253,13 @@ iframe {
       transition:all .5s;
       display:flex;
       align-items:center;
+      font-weight: 700;
+  }
+
+  h2 {
+
+    border: 2em;
+
   }
 
   .sidebar-nav{
@@ -273,7 +281,6 @@ iframe {
     display:block;
     text-decoration:none;
     color:black;
-    font-weight: 700;
   }
   
   .sidebar-nav li:hover{

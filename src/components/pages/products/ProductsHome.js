@@ -24,6 +24,7 @@ export const ProductsHome = () => {
                 <div className="col-lg-3 col-12">
                     <div id="sidebar-wrapper">
                         <ul class="sidebar-nav">
+                            <h1>CATEGORÍAS</h1>
                             <li><a href="#">FRUTAS Y VERDURAS</a></li>
                             <li><a href="#">DISPENSA</a></li>
                             <li><a href="#">CUIDADO PERSONAL</a></li>
