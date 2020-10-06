@@ -287,4 +287,180 @@ iframe {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0) 100%);
   }
   
+  /* tags */
+
+  .tags{
+    margin-top: 2rem;
+  }
+
+  input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  input[type=checkbox]:checked + label:after {
+    -webkit-transform: scale(4.2);
+            transform: scale(4.2);
+  }
+  
+  .labeltag {
+    outline: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: .4rem;
+    border: 0.1rem solid #000;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 0 0 #000;
+    font-weight: 700;
+  }
+  .labeltag::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    mix-blend-mode: difference;
+    background: radial-gradient(circle at center, #fff 24%, #000 25%, #000 100%);
+  }
+  .labeltag:active {
+    top: 3px;
+    box-shadow: none;
+  }
+
+  /* sort */
+  .select-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #60666d;
+  }
+  @media (min-width: 768px) {
+    .select-box {
+      width: 70%;
+    }
+  }
+  @media (min-width: 992px) {
+    .select-box {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .select-box {
+      width: 30%;
+    }
+  }
+  .select-box__current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+  }
+  .select-box__current:focus + .select-box__list {
+    opacity: 1;
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  .select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+  }
+  .select-box__current:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+  }
+  .select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .select-box__value {
+    display: -webkit-box;
+    display: flex;
+  }
+  .select-box__input {
+    display: none;
+  }
+  .select-box__input:checked + .select-box__input-text {
+    display: block;
+  }
+  .select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+  }
+  .select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+            animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  }
+  .select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+  }
+  .select-box__option:hover, .select-box__option:focus {
+    color: #546c84;
+    background-color: #fbfbfb;
+  }
+  
+  @-webkit-keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
+  
+  @keyframes HideList {
+    from {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+    to {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }
   
