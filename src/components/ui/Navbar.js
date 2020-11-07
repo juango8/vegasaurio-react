@@ -50,7 +50,7 @@ export const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link menu-item"
                         exact
-                        to="/productos">
+                        to="/ofertas">
                         OFERTAS
                     </NavLink>
                     <NavLink

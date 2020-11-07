@@ -21,7 +21,7 @@ export const ProductsHome = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-3 col-12">
+                <div className="categorybar col-lg-3 col-12 align-self-start">
                     <div id="sidebar-wrapper">
                         <ul class="sidebar-nav">
                             <h1>CATEGORÍAS</h1>
@@ -39,9 +39,9 @@ export const ProductsHome = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-lg-9 col-12">
-                    <div className="tags">
-                        <div class="select-box">
+                <div className="col-lg-9 col">
+                    <div className="row tags justify-content-center">
+                        {/* <div class="select-box">
                             <div class="select-box__current" tabindex="1">
                                 <div class="select-box__value">
                                     <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
@@ -81,14 +81,58 @@ export const ProductsHome = () => {
                                     <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <input type="checkbox" id="cb1" /><label className="labeltag" for="cb1">glutten free</label>
                         <input type="checkbox" id="cb1" /><label className="labeltag" for="cb1">organico</label>
                         <input type="checkbox" id="cb1" /><label className="labeltag" for="cb1">ecologico</label>
                         <input type="checkbox" id="cb1" /><label className="labeltag" for="cb1">apto para diabeticos</label>
                     </div>
+                    <div className="row justify-content-center">
+                        <div className="productscards">
+                            <div class="card">
+                                <figure>
+                                    <img src="./assets/img/face3.jpg" alt="productname"></img>
+                                </figure>
+                                <section class="details">
+                                    <div class="min-details">
+                                        <h3>Nombre <span>producto</span></h3>
+                                        <h3 class="price">S/45,99</h3>
+                                    </div>
+
+                                    <div class="options">
+                                        <div class="options-size">
+                                            <h3>tag</h3>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="options">
+                                        <div class="options-size">
+                                            <h3>marca</h3>
+                                            <ul>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </section>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
+
         </div>
     );
 }
